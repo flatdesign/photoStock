@@ -32,7 +32,7 @@
           {
             label: 'Галерея',
             action: () => {
-              //this.$router.push("/");
+              this.$router.push("/gallery");
             }
           },
         ]

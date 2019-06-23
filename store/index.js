@@ -1,7 +1,11 @@
 import Vuex from 'vuex';
+import photos from '@/store/photos';
 
 const createStore = () => {
   return new Vuex.Store({
+    modules: {
+      photos,
+    },
     state: {
       sideBarStatus: false,
     },

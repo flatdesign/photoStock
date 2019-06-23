@@ -2,12 +2,9 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   mode: 'spa',
-  /*
-  ** Headers of the page
-  */
+
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    title: 'Photo Stock',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,30 +19,23 @@ export default {
       }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
+ 
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
+
   css: [
+    '~/assets/style/app.styl',
+    '~/assets/style/main.scss'
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
+
+
   plugins: [
+    '@/plugins/vuetify',
   ],
-  /*
-  ** Nuxt.js modules
-  */
+  
   modules: [
-    '@nuxtjs/vuetify',
+    '@nuxtjs/axios',
   ],
-  /*
-  ** vuetify module configuration
-  ** https://github.com/nuxt-community/vuetify-module
-  */
+
   vuetify: {
     theme: {
       primary: colors.blue.darken2,
@@ -57,13 +47,8 @@ export default {
       success: colors.green.accent3
     }
   },
-  /*
-  ** Build configuration
-  */
+
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend(config, ctx) {
     }
   }

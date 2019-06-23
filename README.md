@@ -1,6 +1,6 @@
 # photoStock
 
-> My good Nuxt.js project
+> Photo stock ( test app)
 
 ## Build Setup
 
@@ -19,4 +19,3 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
